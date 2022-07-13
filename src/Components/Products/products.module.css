@@ -1,0 +1,25 @@
+/* Styling of input elements are in Login.module.css */
+
+#productContainer {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: 50px 0;
+}
+
+
+@media only screen and (min-width : 425px) and (max-width : 768px) {
+
+    #productContainer {
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+
+    #productContainer {
+        flex-direction: column;
+    }
+    
+}

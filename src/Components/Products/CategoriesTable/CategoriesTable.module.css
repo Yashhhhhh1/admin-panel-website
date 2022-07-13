@@ -1,0 +1,163 @@
+#prodCategoryContainer {
+    padding: 40px;
+    color: white;
+    margin-left: 20px;
+    background: #435c70;
+    height: auto;
+}
+
+#prodCategoryContainer div{
+    overflow-y: scroll;
+    height: auto;
+    max-height: 400px;
+}
+
+#prodCategoryContainer h2{
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+#prodCategoryContainer table{
+    border-spacing: 0 1px;
+}
+
+#addNewCat, #addCatBtn{
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin: 15px 0 0;
+    background-color: #F5A623;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    border: 1px solid #F5A623;
+    outline: none;
+}
+
+#addCatContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+}
+
+#addCatContainer div{
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+
+#addCatContainer div{
+    margin: 10vh auto;
+}
+
+#addCatContainer div form{
+    display: flex;
+    flex-wrap: wrap;
+    background: #435c70;
+    padding: 10px;
+}
+
+#addCatContainer div form label{
+    margin: 0 10px;
+    width: 100%;
+}
+
+#crossBtn{
+    text-align: center;
+    font-size: 16px;
+    padding: 0 5px;
+    background-color: black;
+    cursor: pointer;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.catTables{
+    background-color: #50697f;
+    transition: all .2s ease;
+}
+
+.catTables td:nth-child(1){
+    max-width: 250px;
+    overflow: auto;
+    margin-right: 10px;
+}
+
+.catTables:hover{
+    background-color: #486177;
+}
+
+.catTables td{
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+
+.catTables td:last-child{
+    color: #50697f;
+}
+
+#delBtn{
+    background-color: #394e64;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white !important;
+    cursor: pointer;
+}
+
+#delBtn:hover{
+    color: #50697f !important; 
+}
+
+
+
+@media only screen and (min-width : 425px) and (max-width : 768px) {
+
+
+    #prodCategoryContainer h2{
+        font-size: 16px;
+    }
+
+    #prodCategoryContainer {
+        padding: 20px;
+        display: inline-block;
+        width: auto;
+        margin: 30px auto;
+    }
+    
+    #addCatContainer div{
+        width: 80%;
+    }
+
+}
+
+
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+
+
+    #prodCategoryContainer h2{
+        font-size: 16px;
+    }
+
+    #prodCategoryContainer {
+        padding: 20px 40px;
+        display: inline-block;
+        width: auto;
+        margin: 30px auto;
+    }
+    
+    #addCatContainer div{
+        width: 80%;
+    }
+
+}

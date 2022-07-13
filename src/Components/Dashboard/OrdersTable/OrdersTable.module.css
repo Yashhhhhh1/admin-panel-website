@@ -1,0 +1,96 @@
+#ordersListContainer{
+    margin: 0 auto 50px;
+    width: 80%;
+    margin-top: 50px;
+    height: 450px;
+    background-color: #435C70;
+    overflow-y: scroll;
+}
+
+#ordersListContainer h2{
+    margin: 20px 30px;
+    color: white;
+}
+
+.tableHead{
+    padding: 10px;
+}  
+
+#ordersTable{
+    background-color: #395064;
+    border-spacing: 0 1px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.orderList td {
+    padding: 15px 20px;
+    background-color: #50697f;
+}
+
+.orderList td:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+}
+
+#statusCancelled{
+    border: 1px solid red;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    background-color: red;
+    border-radius: 50%;
+    margin: 0 5px 3px 0;
+    box-shadow: 0 0 5px 1.5px red;
+}
+
+#statusPending{
+    border: 1px solid yellow;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 0 5px 3px 0;
+    box-shadow: 0 0 5px 1.5px yellow;
+}
+
+#statusDelivered{
+    border: 1px solid green;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    background-color: green;
+    border-radius: 50%;
+    margin: 0 5px 3px 0;
+    box-shadow: 0 0 5px 1.5px green;
+}
+
+
+
+@media only screen and (min-width : 425px) and (max-width : 768px) {
+
+
+    #ordersListContainer{
+        margin: 50px auto;
+    }
+    
+    #ordersListContainer h2{
+        font-size: 18px;
+    }
+    
+    #ordersTable{
+        font-size: 12px;
+    }
+    
+    .orderList td {
+        padding: 0 10px;
+    }
+
+    
+    
+}

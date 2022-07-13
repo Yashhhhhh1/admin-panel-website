@@ -1,0 +1,91 @@
+#notificationListContainer{
+    text-align: left;
+    height: 435px;
+    background-color: #435C70;
+    padding: 10px 20px;
+}
+
+#notificationListContainer h2{
+    color: white;
+    margin-left: 10px;
+}
+
+#notificationTab{
+    height: 350px;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #6d8da6;
+}
+
+::-webkit-scrollbar-track {
+    background: #394f62;
+}
+
+.notification{
+    background-color: #4e657a;
+    height: 90px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.notification div {
+    font-weight: 700;
+    color: white;
+    padding: 5px 0;
+}
+
+.notification div span{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    color: lightgray;
+}
+
+.profilePic{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+@media only screen and (min-width : 425px) and (max-width : 768px) {
+   
+    #notificationListContainer h2{
+        margin-left: 10px;
+    }
+    
+    #notificationTab{
+        padding: 0;
+        width: 90%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: stretch;
+        overflow-y: scroll;
+    }
+
+    .notification{
+        height: auto;
+        padding: 15px;
+        margin: 10px 0;
+    }
+    
+    .profilePic{
+        height: 90px;
+        width: 90px;
+    }
+        
+}

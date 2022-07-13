@@ -1,0 +1,265 @@
+/* Styling of input elements are in Login.module.css */
+
+#accTypesContainer{
+    height: auto;
+    padding: 40px;
+    width: 80%;
+    margin: 50px auto;
+    background-color: #435C70;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #435C70;
+}
+
+#accTypesContainer h4, #accTypesContainer div select{
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+#accTypesContainer h3{
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+#accTypesContainer div{
+    position: relative;
+}
+
+#accTypesContainer div select{
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background: #50657b;
+    border: none;
+    color: #ACC6DE;
+    appearance: none;
+    cursor: pointer;
+}
+
+#accTypesContainer div select:focus{
+    outline:  2px solid #ACC6DE;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+#accTypesContainer div i{
+    position: absolute;
+    z-index: 1;
+    top: 25px;
+    right: 25px;
+    font-size: 18px;
+    color: #ACC6DE;
+}
+
+#userDetailsContainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+#avatarOption{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #435C70;
+    width: 400px;
+    color: white;
+    box-shadow: 0 0 10px #435C70;
+}
+
+#avatarOption img{
+    width: 100%;
+    margin: 25px 0;
+}
+
+#avatarOption div{
+    position: relative;
+    width: 100%;
+}
+
+#uploadImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#avatarOption div button{
+    display: block;
+    width: 100%;
+    border: none;
+    background: #F5A623;
+    font-weight: 700;
+    color: white;
+    padding: 15px;
+}
+
+#avatarOption h3{
+    font-size: 18px;
+}
+
+#userDetails{
+    padding: 40px;
+    background-color: #435C70;
+    box-shadow: 0 0 10px #435C70;
+    color: white;
+}
+
+#userDetails form{
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+#userDetails form div{
+    width: calc(50% - 10px);
+}
+
+#updateProfileBtn, #deleteProfileBtn {
+    position: relative;
+    top: 15px;
+    display: block;
+    width: calc(50% - 10px);
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+    background-color: #F5A623;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#deleteProfileBtn {
+    width: 100%;
+}
+
+
+
+
+@media only screen and (min-width : 425px) and (max-width : 768px) {
+
+    #accTypesContainer{
+        padding: 20px;
+        margin: 30px auto;
+    }
+    
+    #accTypesContainer h4, #accTypesContainer div select{
+        font-size: 16px;
+    }
+    
+    #accTypesContainer h3{
+        font-size: 18px;
+    }
+    
+    #accTypesContainer div select{
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    #accTypesContainer div i{
+        top: 20px;
+        right: 15px;
+        font-size: 14px;
+    }
+    
+    #userDetailsContainer{
+        width: 100%;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    
+    #avatarOption{
+        padding: 20px;
+        width: 340px;
+        min-width: 340px;
+        margin: 0 auto 50px;
+    }
+
+    #avatarOption img{
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    #avatarOption div button{
+        width: 90%;
+        margin: 0 auto;
+        font-weight: 600;
+        padding: 12px;
+    }
+    
+    #avatarOption h3{
+        font-size: 16px;
+    }
+    
+    #userDetails{
+        padding: 20px;
+        margin: 0 auto 30px;
+        min-width: 357px; 
+    }
+    
+    #userDetails h3{
+        font-size: 16px;
+    }
+
+    #userDetails form{
+        width: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    #userDetails form div{
+        width: 100%;
+    }
+
+    #userDetails form div label{
+        font-size: 14px;
+    }
+
+    #userDetails form div input{
+        padding: 10px;
+    }
+    
+    #updateProfileBtn, #deleteProfileBtn {
+        position: static;
+        width: 100%;
+    }
+
+    
+}
+
+
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+
+    #userDetailsContainer{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #avatarOption{
+        padding: 20px;
+        width: 340px;
+        margin: 30px auto;
+    }
+
+    #userDetails{
+        padding: 20px;
+        margin: 30px auto;
+    }
+}

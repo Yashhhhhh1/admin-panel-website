@@ -1,0 +1,9 @@
+#performanceChartContainer{
+    padding: 10px 30px 20px;
+    color: white;
+    background-color: #435C70;
+}
+
+#performanceChartContainer h2{
+    margin: 0 0 10px;
+}
