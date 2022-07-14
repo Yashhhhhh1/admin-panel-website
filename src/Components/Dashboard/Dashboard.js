@@ -12,10 +12,6 @@ function Dashboard(props) {
   let userName = JSON.parse(localStorage.getItem("UserName"));
   const [ username ] = useState(props.userName);
 
-  const UserContext =  React.createContext();
-  const userData = React.useContext(UserContext);
-  console.log(userData);
-
   useEffect(() => {
   }, [props.dataList.data, username])
 

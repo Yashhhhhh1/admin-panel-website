@@ -1,5 +1,4 @@
 {
-  "homepage" : "http://Yashhhhhh1.github.io/admin-panel-website",
   "name": "products-website",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +10,7 @@
     "axios": "^0.27.2",
     "chart.js": "^3.8.0",
     "firebase": "^9.9.0",
+    "firebase-tools": "^11.2.2",
     "react": "^18.1.0",
     "react-chartjs-2": "^4.1.0",
     "react-dom": "^18.1.0",
@@ -24,8 +24,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

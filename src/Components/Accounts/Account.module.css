@@ -72,6 +72,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 40px;
     background-color: #435C70;
     width: 400px;
+    min-width: 300px;
     color: white;
     box-shadow: 0 0 10px #435C70;
 }
@@ -151,10 +152,11 @@ input[type=number]::-webkit-outer-spin-button {
 
 
 
-@media only screen and (min-width : 425px) and (max-width : 768px) {
+@media only screen and (min-width : 320px) and (max-width : 768px) {
 
     #accTypesContainer{
-        padding: 20px;
+        padding: 10px 20px;
+        width: 90%;
         margin: 30px auto;
     }
     
@@ -184,9 +186,8 @@ input[type=number]::-webkit-outer-spin-button {
     }
     
     #avatarOption{
-        padding: 20px;
-        width: 340px;
-        min-width: 340px;
+        padding: 20px 10px;
+        width: 50vw;
         margin: 0 auto 50px;
     }
 
@@ -209,7 +210,8 @@ input[type=number]::-webkit-outer-spin-button {
     #userDetails{
         padding: 20px;
         margin: 0 auto 30px;
-        min-width: 357px; 
+        width: calc(85% - 20px);
+        min-width: 300px; 
     }
     
     #userDetails h3{
@@ -237,6 +239,7 @@ input[type=number]::-webkit-outer-spin-button {
     #updateProfileBtn, #deleteProfileBtn {
         position: static;
         width: 100%;
+        padding: 8px;
     }
 
     

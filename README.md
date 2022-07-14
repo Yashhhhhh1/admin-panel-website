@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Hosted Link https://product-admin-panel.web.app/
+Hosted Link https://product-admin-panel-app.web.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

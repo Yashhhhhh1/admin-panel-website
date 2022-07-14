@@ -48,7 +48,8 @@ const Header = ({ login, changeLoginStatus, username }) => {
         <i id={style.toggleNav} style={hamOption ? {visibility: "visible"} : {visibility: "hidden"}}
         onClick={ ()=> setToggleMenu(!toggleMenu)} className="fa-solid fa-bars"></i>
         <nav style={toggleMenu ? {visibility: "visible"} : {visibility: "hidden"}}>
-          <Link className={style.navLink} to={loginStatus ? "/dashboard" : "/"}>Dashboard</Link>
+          <Link className={style.navLink} to={loginStatus ? "/dashboard" : "/"}
+          onClick={()=> setToggleMenu(!toggleMenu)}>Dashboard</Link>
           <div style={{ display: "inline-block", position: "relative" }}>
             <Link className={style.navLink} to="#"
               onClick={toggleReportsDropdown}>Reports <i className="fa-solid fa-angle-down"></i></Link>
@@ -58,8 +59,10 @@ const Header = ({ login, changeLoginStatus, username }) => {
               <span className={style.dropdownOptions} onClick={() => { loginStatus ? navigate("/yearlyReport") : navigate("/"); setDropdownReport(!dropdownReports) }}>Yearly Report</span><br></br>
             </div>
           </div>
-          <Link className={style.navLink} to={loginStatus ? "/products" : "/"}>Products</Link>
-          <Link className={style.navLink} to={loginStatus ? "/account" : "/"}>Accounts</Link>
+          <Link className={style.navLink} to={loginStatus ? "/products" : "/"}
+          onClick={()=> setToggleMenu(!toggleMenu)}>Products</Link>
+          <Link className={style.navLink} to={loginStatus ? "/account" : "/"}
+          onClick={()=> setToggleMenu(!toggleMenu)}>Accounts</Link>
           <div style={{ display: "inline-block", position: "relative" }}>
             <Link to="#" className={style.navLink} onClick={toggleSettingsDropdown} >Settings <i className="fa-solid fa-angle-down"></i></Link>
             <div className={dropdownSettings ? style.show : style.dropdownOptionsContainer} style={dropdownSettings ? {visibility: "visible"} : {visibility: "hidden"}}>
