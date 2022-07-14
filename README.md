@@ -1,10 +1,7 @@
 # Getting Started with Create React App
 
-<<<<<<< HEAD
 Hosted Link https://product-admin-panel-app.web.app/
 
-=======
->>>>>>> 06303a45bbf0eed6465be64271d25128730e6be4
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
