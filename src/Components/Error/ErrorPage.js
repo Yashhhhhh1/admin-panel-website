@@ -5,13 +5,14 @@ function ErrorPage() {
   const styling = {
     textAlign: "center",
     margin: "50px 0 10px",
-    fontSize: "22px",
+    fontSize: "3vw",
     color: "white",
   }
 
   const imageStyling = {
     display: "block",
-    width: "400px",
+    width: "calC(80% - 10px)",
+    maxWidth: "400px",
     margin: "10px auto 50px",
   }
 
